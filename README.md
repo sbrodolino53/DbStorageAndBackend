@@ -17,14 +17,23 @@ Light, ASP.NET Core Minimal API that registers and logs-in users, issues signed 
 
 ## Quick Start
 
-1. **Clone the repo**  
-	git clone https://github.com/sbrodolino53/DbStorageAndBackend.git
-	cd DbStorageAndBackend
-2. **Add the user secrets (JwtKey and DB connection string)**
-	dotnet user-secrets init
-	dotnet user-secrets set ConnectionStrings:PersonDb "Host=localhost;Database=minidb;Username=mini;Password=mini"
-	dotnet user-secrets set JwtKey "AtLeast32CharactersLongKeyForHmacSha256SecurityScheme"
+1. Clone the repo  
+   ```bash
+   $ git clone https://github.com/sbrodolino53/DbStorageAndBackend.git
+   $ cd DbStorageAndBackend
+   ```
 
-3. **Build and Run**
-	dotnet build
-	dotnet run
+2. Add user secrets (JWT key & DB connection string)  
+   ```bash
+   $ dotnet user-secrets init
+   $ dotnet user-secrets set ConnectionStrings:PersonDb \
+       "Host=localhost;Database=minidb;Username=mini;Password=mini"
+   $ dotnet user-secrets set JwtKey \
+       "AtLeast32CharactersLongKeyForHmacSha256SecurityScheme"
+   ```
+
+3. Build and run  
+   ```bash
+   $ dotnet build
+   $ dotnet run
+   ```
