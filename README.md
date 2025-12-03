@@ -18,22 +18,32 @@ Light, ASP.NET Core Minimal API that registers and logs-in users, issues signed 
 ## Quick Start
 
 1. Clone the repo  
-   ```bash
-   	git clone https://github.com/sbrodolino53/DbStorageAndBackend.git
-   	cd DbStorageAndBackend
-   ```
+```bash
+   git clone https://github.com/sbrodolino53/DbStorageAndBackend.git 
+   cd DbStorageAndBackend
+```
 
-2. Add user secrets (JWT key & DB connection string)  
-   ```bash
-   	dotnet user-secrets init
-   	dotnet user-secrets set ConnectionStrings:PersonDb \
-       "Host=localhost;Database=yourDatabaseName;Username=yourUsername;Password=yourPassword"
-   	dotnet user-secrets set JwtKey \
-       "AtLeast32CharactersLongKeyForHmacSha256SecurityScheme"
-   ```
-
-3. Build and run  
-   ```bash
-   	dotnet build
-   	dotnet run
-   ```
+2. Add user secrets (JWT key & DB connection string)
+```bash
+	dotnet user-secrets init
+```
+Replace yourDatabaseName, yourUsername and yourPassword with your actual PostgreSQL values:
+```bash
+	dotnet user-secrets set ConnectionStrings:PersonDb \"Host=localhost;Database=yourDatabaseName;Username=yourUsername;Password=yourPassword"
+```
+Generate a 32-byte key and store it:
+```bash
+	dotnet user-secrets set JwtKey \"$(openssl rand -base64 32)"
+```
+3. Create / update the database
+```bash
+	dotnet ef migrations add InitialCreate
+	dotnet ef database update
+```
+4. Build and run
+```bash
+	dotnet build
+	dotnet run
+```
+5. Try the API
+Open https://localhost:5246/scalar/v1 in your browser and use the interactive UI to register/login.
