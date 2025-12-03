@@ -27,7 +27,7 @@ Light, ASP.NET Core Minimal API that registers and logs-in users, issues signed 
    ```bash
    $ dotnet user-secrets init
    $ dotnet user-secrets set ConnectionStrings:PersonDb \
-       "Host=localhost;Database=minidb;Username=mini;Password=mini"
+       "Host=localhost;Database=yourDatabaseName;Username=yourUsername;Password=yourPassword"
    $ dotnet user-secrets set JwtKey \
        "AtLeast32CharactersLongKeyForHmacSha256SecurityScheme"
    ```
