@@ -26,7 +26,7 @@ public static class AuthEndpoints
             Email    = dto.Email,
             Password = PasswordService.Hash(dto.Password)
         };
-
+		// protegge da attacchi sql perché inserisce come data non come sql eseguibile
         db.Users.Add(user);
         await db.SaveChangesAsync();
 

@@ -49,3 +49,4 @@
 /Users/ilyagoronok/VSCode/DotNet/DbStorageAndBackend/bin/Debug/net10.0/FluentValidation.dll
 /Users/ilyagoronok/VSCode/DotNet/DbStorageAndBackend/bin/Debug/net10.0/FluentValidation.AspNetCore.dll
 /Users/ilyagoronok/VSCode/DotNet/DbStorageAndBackend/bin/Debug/net10.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/ilyagoronok/VSCode/DotNet/DbStorageAndBackend/obj/Debug/net10.0/DbStorageAndBackend.sourcelink.json
