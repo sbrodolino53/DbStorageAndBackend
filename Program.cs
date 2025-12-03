@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-using Npgsql.EntityFrameworkCore.PostgreSQL;
+//using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Http;
+//using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Scalar.AspNetCore;
 using MinimalApiTemplate.Infrastructure;
 using MinimalApiTemplate.Infrastructure.Auth;
-using MinimalApiTemplate.Features.Users;
+//using MinimalApiTemplate.Features.Users;
 using FluentValidation;
 
 

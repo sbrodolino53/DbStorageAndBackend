@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MinimalApiTemplate.Features.Users;
-using MinimalApiTemplate.Infrastructure.Auth;
+//using MinimalApiTemplate.Infrastructure.Auth;
 
 namespace MinimalApiTemplate.Infrastructure.Auth;
 
