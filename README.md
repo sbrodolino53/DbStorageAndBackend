@@ -33,7 +33,7 @@ Replace yourDatabaseName, yourUsername and yourPassword with your actual Postgre
 ```
 Generate a 32-byte key and store it:
 ```bash
-	dotnet user-secrets set JwtKey \"$(openssl rand -base64 32)"
+	dotnet user-secrets set JwtKey "$(openssl rand -base64 32)"
 ```
 3. Create the database
 Connect to the PostgreSQL database you have, and in terminal type this
